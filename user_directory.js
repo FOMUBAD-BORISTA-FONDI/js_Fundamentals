@@ -55,6 +55,8 @@ const API_URL ='https://jsonplaceholder.typicode.com/users';
                 address: `${user.address.street}, ${user.address.suite}, ${user.address.city}, ${user.address.zipcode}`
             }));
 
+            
+
             const searchCity = "Roscoeview";
             const results = cleanUsers.filter(user => user.city === searchCity);
             console.log("\n==========================================");
