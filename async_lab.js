@@ -53,11 +53,11 @@ getSafeUserData();
 const getPostInfo = async (PostId) => {
   try {
     const response = await fetch(
-      `https://jsonplaceholder.typicode.com/posts/${PostId}`
+      `https://jsonplaceholder.typicode.com/posts/${PostId}`,
     );
     if (!response.ok) {
       throw new Error(
-        `Could Not find Post, HTTP error! status: ${response.status}`
+        `Could Not find Post, HTTP error! status: ${response.status}`,
       );
     }
     const data = await response.json();
