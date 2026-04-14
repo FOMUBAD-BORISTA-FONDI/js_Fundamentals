@@ -64,7 +64,7 @@ const getPostInfo = async (PostId) => {
     console.log(`Post Title: ${data.title}`);
     console.log(`Post Body: ${data.body}`);
   } catch (error) {
-    console.log("Error Caught: ", error.message);
+    console.log("Error: ", error.message);
     console.error("Error whilefetching post data:", error);
     console.log("Please check the API endpoint and try again.");
   }
